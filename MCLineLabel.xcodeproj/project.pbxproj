@@ -21,6 +21,7 @@
 		6B91D895189608FF00DD23E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B91D877189608FF00DD23E2 /* UIKit.framework */; };
 		6B91D89D189608FF00DD23E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B91D89B189608FF00DD23E2 /* InfoPlist.strings */; };
 		6B91D89F189608FF00DD23E2 /* MCLineLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B91D89E189608FF00DD23E2 /* MCLineLabelTests.m */; };
+		6B91D8AB1896098500DD23E2 /* MCLineLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B91D8AA1896098500DD23E2 /* MCLineLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6B91D89A189608FF00DD23E2 /* MCLineLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCLineLabelTests-Info.plist"; sourceTree = "<group>"; };
 		6B91D89C189608FF00DD23E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B91D89E189608FF00DD23E2 /* MCLineLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCLineLabelTests.m; sourceTree = "<group>"; };
+		6B91D8A91896098500DD23E2 /* MCLineLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLineLabel.h; sourceTree = "<group>"; };
+		6B91D8AA1896098500DD23E2 /* MCLineLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLineLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		6B91D879189608FF00DD23E2 /* MCLineLabel */ = {
 			isa = PBXGroup;
 			children = (
+				6B91D8A81896096300DD23E2 /* MCLineLabel */,
 				6B91D882189608FF00DD23E2 /* PAAppDelegate.h */,
 				6B91D883189608FF00DD23E2 /* PAAppDelegate.m */,
 				6B91D885189608FF00DD23E2 /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				6B91D89B189608FF00DD23E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B91D8A81896096300DD23E2 /* MCLineLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6B91D8A91896098500DD23E2 /* MCLineLabel.h */,
+				6B91D8AA1896098500DD23E2 /* MCLineLabel.m */,
+			);
+			path = MCLineLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B91D8AB1896098500DD23E2 /* MCLineLabel.m in Sources */,
 				6B91D880189608FF00DD23E2 /* main.m in Sources */,
 				6B91D88A189608FF00DD23E2 /* PAViewController.m in Sources */,
 				6B91D884189608FF00DD23E2 /* PAAppDelegate.m in Sources */,

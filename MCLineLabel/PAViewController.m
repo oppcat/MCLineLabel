@@ -7,7 +7,7 @@
 //
 
 #import "PAViewController.h"
-
+#import "MCLineLabel.h"
 @interface PAViewController ()
 
 @end
@@ -18,6 +18,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    MCLineLabel *label = [[MCLineLabel alloc] initWithFrame:CGRectMake(50, 200, 300, 30)];
+    [label setBackgroundColor:[UIColor clearColor]];
+    [label setTextColor:[UIColor blueColor]];
+     [label setLinePostion:MCLineModeMiddle];
+    [label setLineType:MCLineDiscontinuous];
+    [label setText:@"测试你你是水是是his" andCenter:CGPointMake(200, 240)];
+    
+    //Taped
+    [label WhenTaped:^(id sender) {
+        [label setBackgroundColor:[UIColor redColor]];
+    }];
+
+    [self.view addSubview:label];
 }
 
 - (void)didReceiveMemoryWarning
